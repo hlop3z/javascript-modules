@@ -1,5 +1,20 @@
 # Auto-Load
 
+## Directory Layout
+
+```
+modules/                        --> Modules — Root.
+|
+├── namespace/                  --> <Directory> — namespace(s).
+|   ├── model.store.js          --> <File> SuperVue — Modules.
+|   ├── modelOne.store.js       
+|   └── modelTwo.store.js       
+|
+└── index.js                    --> Code goes HERE.
+```
+
+---
+
 ## Vue 2
 
 ```js
