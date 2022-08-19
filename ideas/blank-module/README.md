@@ -1,0 +1,1 @@
+# Ideas implemented from **Python**

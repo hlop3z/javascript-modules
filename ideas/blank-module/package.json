@@ -1,0 +1,28 @@
+{
+  "name": "my-package",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "es-build": "esbuild src/__init__.js --outfile=dist/TMP.js --bundle --format=esm",
+    "transform": "echo /* eslint-disable */ > dist/Lib.esm.js && cat dist/TMP.js >> dist/Lib.esm.js && rm dist/TMP.js",
+    "build": "npm run es-build && npm run transform",
+    "lint": "eslint \"src/**\" --fix"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "dependencies": {
+    "esbuild": "^0.15.5",
+    "glob": "^8.0.3"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.33.0",
+    "@typescript-eslint/parser": "^5.33.0",
+    "eslint": "^8.21.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0"
+  }
+}
