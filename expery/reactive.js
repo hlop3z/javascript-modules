@@ -71,7 +71,7 @@ function reactive(originalData) {
 // export default reactive
 
 /* @ Demo
------------*/
+  -----------*/
 
 const reactiveData = reactive({
   name: "John Doe",
